@@ -2,7 +2,12 @@
 
 import argparse
 from pygraph.readwrite.dot import read
-from cycles.detector import detect
+try:
+    from cycles.detector import detect
+except:
+    import sys
+    sys.path.append('')
+    from cycles.detector import detect
 
 def main(args):
     with open(args.file) as f:
