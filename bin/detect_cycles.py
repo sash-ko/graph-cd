@@ -18,6 +18,7 @@ def main(args):
             f.write(str(components))
     else:
         sys.stdout.write(str(components))
+        sys.stdout.write('\n')
 
 if __name__ == '__main__':
 
