@@ -7,6 +7,7 @@ setup(
     author_email = 'sashkolysenko@gmail.com',
     packages = ['cycles'],
     install_requires=[
+        'argparse',
         'python-graph-core',
         'python-graph-dot'
     ]
