@@ -12,12 +12,12 @@ except:
 def main(args):
     with open(args.file) as f:
         g = read(''.join(f.readlines()))
-    compoments = detect(g)
+    components = detect(g)
     if args.output:
         with open(args.output, 'w') as f:
-            f.write(str(compoments))
+            f.write(str(components))
     else:
-        sys.stdout.write(str(compoments))
+        sys.stdout.write(str(components))
 
 if __name__ == '__main__':
 
